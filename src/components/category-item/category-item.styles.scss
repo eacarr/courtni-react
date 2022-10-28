@@ -1,0 +1,34 @@
+.item--hidden {
+  opacity: 0;
+  transform: translateY(-8rem);
+}
+.item {
+  padding: 10px 0;
+  transition: all 0.5s ease-in-out;
+
+  h3,
+  p {
+    margin: 0;
+    text-transform: capitalize;
+  }
+}
+.item:hover,
+.item:active {
+  transform: scale(1.2);
+}
+.discription {
+  margin: 25px 0;
+}
+img {
+  width: 100%;
+  min-height: 350px;
+  max-height: fit-content;
+  max-height: -moz-fit-content;
+}
+/*tablet version*/
+@media only screen and (min-width: 768px) {
+  .item img {
+    height: 150px;
+    object-fit: cover;
+  }
+}
