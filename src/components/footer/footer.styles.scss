@@ -1,0 +1,46 @@
+.fa-instagram {
+  padding-right: 10px;
+}
+.connect {
+  padding: 80px 0 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .social {
+    padding-bottom: 50px;
+  }
+  p {
+    padding: 0 50px;
+    text-align: center;
+  }
+}
+
+.sign_up {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sign_up input {
+  padding: 22px 30px;
+  border: solid;
+  border-color: #e9e4df;
+  margin-bottom: 25px;
+}
+::placeholder {
+  color: #aba6a1;
+}
+.sign_up button {
+  color: #ffff;
+  padding: 22px 32px;
+  background-color: #aba6a1;
+  border: outset;
+}
+@media only screen and (min-width: 768px) {
+  .sign_up {
+    flex-direction: row;
+  }
+  .sign_up input {
+    margin: 0 15px 0 0;
+  }
+}

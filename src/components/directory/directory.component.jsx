@@ -5,7 +5,7 @@ const Directory = ({ categories }) => {
     <section className="options">
       <div className="container">
         <div className="border-top"></div>
-        <div className="option-list">
+        <div className="option-list fade-in-element">
           {categories.map((category) => (
             <CategoryItem key={category.id} category={category} />
           ))}

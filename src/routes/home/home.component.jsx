@@ -1,6 +1,7 @@
-import { Outlet } from "react-router-dom";
+import Header from "../../components/header/header.component";
+import Menu from "../../components/menu/menu.component";
 import Directory from "../../components/directory/directory.component";
-
+import Footer from "../../components/footer/footer.component";
 const Home = () => {
   const categories = [
     {
@@ -90,8 +91,10 @@ const Home = () => {
   ];
   return (
     <div>
-      <Outlet />
+      <Header />
+      <Menu />
       <Directory categories={categories} />
+      <Footer />
     </div>
   );
 };
